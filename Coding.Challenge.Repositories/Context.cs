@@ -10,8 +10,7 @@ internal class Context : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        //optionsBuilder.UseSqlServer($"Server=(localdb)\\MSSQLLocalDB;Database=CodingChallenge;Trusted_Connection=True;TrustServerCertificate=True;");
-        optionsBuilder.UseSqlServer($"Server=LAPTOP-IMEVB5MK\\SQLEXPRESS;Database=CodingChallenge;Trusted_Connection=True;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer($"Server=(localdb)\\MSSQLLocalDB;Database=CodingChallenge;Trusted_Connection=True;TrustServerCertificate=True;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
